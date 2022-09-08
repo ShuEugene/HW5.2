@@ -22,7 +22,7 @@ public class Main {
             System.out.println("\n");
         }
 
-//  ДЗ 5.2.2
+//  ДЗ 5.2.3
         {
             int population = 12_000_000,
                     birthRate = population / 1000 * 17,
@@ -35,6 +35,19 @@ public class Main {
                 birthRate = population / 1000 * 17;
                 mortality = population / 1000 * 8;
             }
+            System.out.println();
+        }
+
+//  ДЗ 5.2.4
+        {
+            int deposit = 15_000, cashSavings = deposit, month = 1;
+            byte interestRate = 7;
+            while (cashSavings <= 12_000_000) {
+                cashSavings += (cashSavings / 100 * interestRate);
+                System.out.printf("Месяц %d-й, сумма накоплений - %d рублей.\n",
+                        month++, cashSavings);
+            }
+            System.out.println();
         }
 
         System.out.println();

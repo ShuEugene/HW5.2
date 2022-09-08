@@ -10,6 +10,15 @@ public class Main {
                         monthNumber, cashSavings);
                 monthNumber++;
             }
+            System.out.println();
+        }
+
+//  ДЗ 5.2.2
+        {
+            int i = 1;
+            while (i <= 10) System.out.printf("%d ", i++);
+            System.out.println();
+            for (i = 10; i >= 1; i--) System.out.printf("%d ", i);
         }
 
         System.out.println();

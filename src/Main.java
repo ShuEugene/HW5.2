@@ -19,6 +19,22 @@ public class Main {
             while (i <= 10) System.out.printf("%d ", i++);
             System.out.println();
             for (i = 10; i >= 1; i--) System.out.printf("%d ", i);
+            System.out.println("\n");
+        }
+
+//  ДЗ 5.2.2
+        {
+            int population = 12_000_000,
+                    birthRate = population / 1000 * 17,
+                    mortality = population / 1000 * 8,
+                    year = 2022;
+            while (year <= 2032) {
+                System.out.printf("Год %d, численность населения составляет %d.\n",
+                        year++, population);
+                population += birthRate - mortality;
+                birthRate = population / 1000 * 17;
+                mortality = population / 1000 * 8;
+            }
         }
 
         System.out.println();

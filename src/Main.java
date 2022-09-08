@@ -38,16 +38,18 @@ public class Main {
             System.out.println();
         }
 
-//  ДЗ 5.2.4
+//  ДЗ 5.2.4,5
         {
             int deposit = 15_000, cashSavings = deposit, month = 1;
             byte interestRate = 7;
             while (cashSavings <= 12_000_000) {
                 cashSavings += (cashSavings / 100 * interestRate);
-                System.out.printf("Месяц %d-й, сумма накоплений - %d рублей.\n",
-                        month++, cashSavings);
+                if (month % 6 == 0) System.out.printf("Месяц %d-й, сумма накоплений - %d рублей.\n",
+                        month, cashSavings);
+                month++;
             }
-            System.out.println();
+            System.out.printf("Месяц %d-й, сумма накоплений - %d рублей.\n",
+                    --month, cashSavings);
         }
 
         System.out.println();

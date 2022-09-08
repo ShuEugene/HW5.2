@@ -52,6 +52,18 @@ public class Main {
                     --month, cashSavings);
         }
 
+//  ДЗ 5.2.6
+        {
+            int requestYear = 9;
+            int deposit = 15_000, cashSavings = deposit, month;
+            byte interestRate = 7;
+            for (month = 1; month <= 12 * requestYear; month++) {
+                cashSavings += (cashSavings / 100 * interestRate);
+                if (month % 6 == 0) System.out.printf("Месяц %d, накопления: %d рублей.\n",
+                        month, cashSavings);
+            }
+        }
+
         System.out.println();
     }
 }

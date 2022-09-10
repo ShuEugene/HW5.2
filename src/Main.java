@@ -76,6 +76,15 @@ public class Main {
             System.out.println();
         }
 
+//  ДЗ 5.2.8
+        {
+            byte periodOfAppearance = 79;
+            int startRequestPeiod = 2022 - 200, endRequestPeriod = 2022 + 100;
+            for (int i = 0; i <= endRequestPeriod; i += periodOfAppearance)
+                if (i >= startRequestPeiod) System.out.println(i);
+            System.out.println();
+        }
+
         System.out.println();
     }
 }

@@ -85,6 +85,12 @@ public class Main {
             System.out.println();
         }
 
+//  ДЗ 5.2.9
+        {
+            for (int i = 1; i <= 10; i++) System.out.printf("2 * %d = %d\n", i , 2 * i);
+            System.out.println();
+        }
+
         System.out.println();
     }
 }

@@ -62,6 +62,18 @@ public class Main {
                 if (month % 6 == 0) System.out.printf("Месяц %d, накопления: %d рублей.\n",
                         month, cashSavings);
             }
+            System.out.println();
+        }
+
+//  ДЗ 5.2.7
+        {
+            int reportDay = 5;
+            for (int i = reportDay; i <= 31; i += 7) {
+                System.out.printf("Сегодня Пятница, %d-е число. Необходимо подготовить отчёт.\n",
+                        reportDay);
+                reportDay += 7;
+            }
+            System.out.println();
         }
 
         System.out.println();
